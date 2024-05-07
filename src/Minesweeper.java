@@ -4,7 +4,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
-public class Minesweeper {
+public class Minesweeper implements ActionListener {
     private JFrame frame;
     private JPanel mainPanel;
     private JMenuBar menuBar;
@@ -119,5 +119,10 @@ public class Minesweeper {
 
         frame.pack();
         frame.setVisible(true);
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+
     }
 }
